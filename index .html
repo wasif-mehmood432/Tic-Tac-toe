@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen text-white">
+    <div id="particles"></div>
+    <div class="container max-w-md mx-auto bg-white/10 rounded-lg p-6">
+        <h1 class="text-4xl font-bold text-center mb-4">Tic-Tac-Toe</h1>
+        <div id="status" class="text-center text-lg mb-6">Player X's Turn</div>
+        <div id="board" class="grid grid-cols-3 gap-4">
+            <!-- Cells will be dynamically added -->
+        </div>
+        <button onclick="resetGame()" class="mt-6 w-full bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded">Restart</button>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
